@@ -1,4 +1,17 @@
 {% extends "layout.html" %}
 {% block body %}
-SDFSDF
+
+<ul class="rss-news">
+{% for i in data %}
+{% autoescape false %}
+    <li>
+         <!-- <b>{# i.published_parsed.strftime() #} </b> -->
+         <b>14 de junho de 2008 </b>
+        <a href="{{ i.links[0].href }}"> {{ i.title }} </a>
+        <!-- {{ i.content[0].value }} -->
+    </li>
+    {% endautoescape %}
+{% endfor %}
+</ul>
+
 {% endblock %}

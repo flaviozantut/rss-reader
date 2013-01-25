@@ -18,3 +18,8 @@ Instruções
     $ workon rss-reader
     (rss-reader)$ pip install -r requirements.txt
     (rss-reader)$ python rss_reader.py
+
+
+Testes unitários
+---
+    python -m unittest discover -s tests/ -p '*_test.py'
