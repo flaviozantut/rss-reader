@@ -1,0 +1,7 @@
+{
+  "name": "rss-reader",
+  "version": "1.0.0",
+  "dependencies": {
+    "html5-boilerplate": "~4.1.0"
+  }
+}
