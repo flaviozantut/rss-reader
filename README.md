@@ -24,11 +24,6 @@ Testes unitários
     python -m unittest discover -s tests/ -p '*_test.py'
 
 
-Layout
----
-O aplicativo foi desenvolvido visando a acessibilidade, portanto mesmo sedo acessado
-por um dispositivo, sem suporte ou com o javascript desabilitado as noticias serão listadas
-e poderão ser visualizadas.
 
 
 
