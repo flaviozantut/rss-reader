@@ -9,6 +9,7 @@ jQuery(document).ready(function($) {
     $('.rss-news li').each(function(i, val){
         $(this).css('left', (i)*width);
     });
+    $('.rss-news li').css('display', 'block');
     $('#rss-next').click(function(){
         if( !$('.rss-news li:last').hasClass('active') ){
             $('.rss-news .active').removeClass('active').next().addClass('active');

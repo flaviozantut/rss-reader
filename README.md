@@ -17,6 +17,11 @@ Instruções
     (rss-reader)$ pip install -r requirements.txt
     (rss-reader)$ python rss_reader.py
 
+minificar js e css
+---
+    slimit --mangle < static/js/main.js > static/js/main.min.js
+    cssmin < static/css/main.css > static/css/main.min.css
+
 
 Testes unitários
 ---

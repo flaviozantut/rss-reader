@@ -458,9 +458,10 @@ body{
 .js .rss-news{
     overflow: hidden;
     top:100px;
+
 }
 .js .rss-news li{
-    display: block;
+    display: none;
     position: absolute;
     text-align: center;
     top:15px;
