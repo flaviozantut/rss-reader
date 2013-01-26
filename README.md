@@ -1,8 +1,6 @@
 Requisitos
 ---
 - ([Python](http://www.python.org/))
-- ([node.js](http://nodejs.org/))
-- ([npm](https://npmjs.org/))
 - ([PIP](http://www.pip-installer.org/en/latest/))
 - ([VirtualEnv](http://www.virtualenv.org/en/latest/))
 - ([virtualenvwrapper](http://pypi.python.org/pypi/virtualenvwrapper/))
@@ -10,8 +8,6 @@ Requisitos
 
 Instruções
 ---
-    $ npm install bower -g
-    $ bower install
     $ mkvirtualenv rss-reader
     $ workon rss-reader
     (rss-reader)$ pip install -r requirements.txt
