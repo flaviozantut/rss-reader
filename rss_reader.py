@@ -28,4 +28,5 @@ def all_items():
     return render_template('all_items.html', data=f.entries(), title=f.title())
 
 if __name__ == "__main__":
-    app.run(debug=DEBUG)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=DEBUG)
