@@ -16,7 +16,9 @@ from locale import setlocale
 # configurações
 DEBUG = True
 RSS_URL = 'http://nl.com.br/blog/?feed=rss2'
-locale.setlocale(locale.LC_ALL, 'pt_BR.utf-8')
+#Desabilitado devido ao heroku suportar somente localização
+#em inglês
+#locale.setlocale(locale.LC_ALL, 'pt_BR.utf-8')
 
 
 # Criando a aplicação
