@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
 {% block body %}
-
+<div id="rss-prev" class="circle">
+    <div class="triangle-left"></div>
+</div>
 <ul class="rss-news">
 {% for i in data %}
 {% autoescape false %}
@@ -13,5 +15,8 @@
     {% endautoescape %}
 {% endfor %}
 </ul>
+<div id="rss-next" class="circle">
+    <div class="triangle-right"></div>
+</div>
 
 {% endblock %}
