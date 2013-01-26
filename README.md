@@ -9,7 +9,6 @@ Requisitos
 Instruções
 ---
     $ mkvirtualenv rss-reader
-    $ workon rss-reader
     (rss-reader)$ pip install -r requirements.txt
     (rss-reader)$ python rss_reader.py
 
