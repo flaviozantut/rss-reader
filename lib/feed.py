@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    Feed
-    ~~~~~~~~~~~~~~~~~~
+    Feed lib
 """
 import feedparser
 
@@ -22,8 +21,13 @@ class Feed:
 
 
     def entries(self):
-
+        """
+           Recupera as noticias do feed
+        """
         return self.feedData.entries
 
     def title(self):
+        """
+           Recupera o título do feed
+        """
         return self.feedData.feed.title

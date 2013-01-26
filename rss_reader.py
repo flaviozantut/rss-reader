@@ -8,25 +8,28 @@
     altere o  parametro RSS_URL
 """
 # imports
-import os
+import os, time, locale
 from flask import Flask, render_template
 from lib.feed import Feed
+from locale import setlocale
 
 # configurações
-DEBUG = False
+DEBUG = True
 RSS_URL = 'http://nl.com.br/blog/?feed=rss2'
+locale.setlocale(locale.LC_ALL, 'pt_BR.utf-8')
+
 
 # Criando a aplicação
 app = Flask(__name__)
-# app.config.from_object(__name__)
-# app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
 
 # definições de rotas
 @app.route("/")
 def all_items():
     f = Feed(RSS_URL)
-    return render_template('all_items.html', data=f.entries(), title=f.title(), debug = DEBUG)
+    a = f.entries()
+    return render_template('all_items.html', data=f.entries(), title=f.title(), debug=DEBUG, time=time)
+
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))

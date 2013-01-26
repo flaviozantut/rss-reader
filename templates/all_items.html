@@ -7,8 +7,7 @@
 {% for i in data %}
 {% autoescape false %}
     <li>
-         <!-- <b>{# i.published_parsed.strftime() #} </b> -->
-         <b>14 de junho de 2008 </b>
+         <b>{{ time.strftime('%d de %B de %Y',i.published_parsed) }} </b>
         <a href="{{ i.links[0].href }}"> {{ i.title }} </a>
         <article>
             {{ i.content[0].value }}
