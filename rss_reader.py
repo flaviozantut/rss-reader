@@ -8,6 +8,7 @@
     altere o  parametro RSS_URL
 """
 # imports
+import os
 from flask import Flask, render_template
 from lib.feed import Feed
 
